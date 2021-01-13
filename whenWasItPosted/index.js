@@ -1,6 +1,33 @@
 const whenWasItPosted = date => {
-  // do code here
 
+  let today = new Date;
+  console.log(today)
+
+  //et splitdate = date.split(" ")
+
+  // console.log('date:', splitdate[0])
+  // console.log('Month:', splitdate[1])
+  // console.log('year:', splitdate[2])
+  
+  const inputDate= new Date(date)
+
+  const countdate = (today - inputDate) 
+  
+
+  const day =  countdate/3600/1000/24
+  
+  const week = day / 7
+
+  
+  const month = day / 30
+
+  const year = day /365
+  
+  
+  console.log(day)
+  console.log(week)
+  console.log(month)
+  console.log(year)
 }
 
 
